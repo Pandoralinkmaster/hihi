@@ -1,0 +1,475 @@
+===========================================================================
+🚀 JAYJAY v21.1 — VOLLSTÄNDIGER TEST ALLER 114 ENDPOINTS
+===========================================================================
+Zeit: 2026-07-16T08:37:02.006530
+Target: http://127.0.0.1:58133
+===========================================================================
+
+📦 [1-10] CORE / STATUS / AUTH
+───────────────────────────────────────────────────────────────────────────
+  ✅ GET    /                                             HTTP 200 | 
+<!DOCTYPE html>
+<html><head><title>JAYJAY v21.1</title><sty
+  ❌ GET    /health                                       HTTP 404 | {"error":"Not found","path":"/health"}
+
+  ✅ GET    /api/status                                   HTTP 200 | {"engine":"JAYJAY","modules_active":105,"modules_total":105,
+  ✅ GET    /api/truth                                    HTTP 200 | {"level":"OMEGA-OMEGA","status":"ABSOLUTE","truth":"OMEGA-OM
+  ❌ GET    /api/version                                  HTTP 404 | {"error":"Not found","path":"/api/version"}
+
+  ❌ GET    /api/time                                     HTTP 404 | {"error":"Not found","path":"/api/time"}
+
+  ❌ GET    /api/system                                   HTTP 404 | {"error":"Not found","path":"/api/system"}
+
+  ❌ GET    /api/env                                      HTTP 404 | {"error":"Not found","path":"/api/env"}
+
+  ❌ POST   /api/auth                                     HTTP 401 | {"error":"Invalid credentials"}
+
+  ✅ POST   /api/auth                                     HTTP 401 | {"error":"Invalid credentials"}
+
+
+₿ [11-25] BITCOIN MODULE
+───────────────────────────────────────────────────────────────────────────
+  ✅ GET    /api/bitcoin/status                           HTTP 200 | {"chain_height":0,"difficulty":1.0,"status":"operational"}
+
+  ❌ POST   /api/bitcoin/mine                             HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed
+  ❌ GET    /api/bitcoin/address                          HTTP 404 | {"error":"Not found","path":"/api/bitcoin/address"}
+
+  ❌ POST   /api/bitcoin/tx                               HTTP 404 | {"error":"Not found","path":"/api/bitcoin/tx"}
+
+  ❌ GET    /api/bitcoin/block                            HTTP 404 | {"error":"Not found","path":"/api/bitcoin/block"}
+
+  ❌ GET    /api/bitcoin/chain                            HTTP 404 | {"error":"Not found","path":"/api/bitcoin/chain"}
+
+  ❌ GET    /api/bitcoin/wallet                           HTTP 404 | {"error":"Not found","path":"/api/bitcoin/wallet"}
+
+  ❌ POST   /api/bitcoin/keygen                           HTTP 404 | {"error":"Not found","path":"/api/bitcoin/keygen"}
+
+  ❌ POST   /api/bitcoin/sign                             HTTP 404 | {"error":"Not found","path":"/api/bitcoin/sign"}
+
+  ❌ POST   /api/bitcoin/verify                           HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed
+  ❌ POST   /api/bitcoin/script                           HTTP 404 | {"error":"Not found","path":"/api/bitcoin/script"}
+
+  ❌ POST   /api/bitcoin/hash                             HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed
+  ❌ POST   /api/bitcoin/merkle                           HTTP 404 | {"error":"Not found","path":"/api/bitcoin/merkle"}
+
+  ✅ GET    /api/bitcoin/difficulty                       HTTP 200 | {"bits":"0x1F00FFFF","difficulty":1.0}
+
+  ❌ GET    /api/bitcoin/genesis                          HTTP 404 | {"error":"Not found","path":"/api/bitcoin/genesis"}
+
+
+🛡️ [26-40] NSA / SURVEILLANCE
+───────────────────────────────────────────────────────────────────────────
+  ❌ GET    /api/nsa/status                               HTTP 404 | {"error":"Not found","path":"/api/nsa/status"}
+
+  ❌ POST   /api/nsa/check                                HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed
+  ❌ GET    /api/nsa/blocklist                            HTTP 404 | {"error":"Not found","path":"/api/nsa/blocklist"}
+
+  ✅ POST   /api/nsa/block                                HTTP 200 | {"blocked":"evil.com","total":7}
+
+  ✅ POST   /api/nsa/unblock                              HTTP 200 | {"total":6,"unblocked":"evil.com"}
+
+  ❌ GET    /api/nsa/monitor                              HTTP 404 | {"error":"Not found","path":"/api/nsa/monitor"}
+
+  ✅ GET    /api/nsa/threats                              HTTP 200 | {"count":3,"threats":[{"id":"T-001","severity":"critical","t
+  ❌ POST   /api/nsa/analyze                              HTTP 404 | {"error":"Not found","path":"/api/nsa/analyze"}
+
+  ❌ GET    /api/nsa/report                               HTTP 404 | {"error":"Not found","path":"/api/nsa/report"}
+
+  ❌ GET    /api/nsa/log                                  HTTP 404 | {"error":"Not found","path":"/api/nsa/log"}
+
+  ❌ GET    /api/nsa/config                               HTTP 404 | {"error":"Not found","path":"/api/nsa/config"}
+
+  ❌ POST   /api/nsa/update                               HTTP 404 | {"error":"Not found","path":"/api/nsa/update"}
+
+  ❌ POST   /api/nsa/scan                                 HTTP 404 | {"error":"Not found","path":"/api/nsa/scan"}
+
+  ❌ GET    /api/nsa/filter                               HTTP 404 | {"error":"Not found","path":"/api/nsa/filter"}
+
+  ✅ GET    /api/nsa/stats                                HTTP 200 | {"blocked":6,"threats":3,"uptime":1784162221.8244793}
+
+
+👑 [41-50] GRANDGOTT / ROOT
+───────────────────────────────────────────────────────────────────────────
+  ✅ GET    /api/grandgott/status                         HTTP 200 | {"level":"OMEGA-OMEGA","status":"ACTIVE","vectors":10}
+
+  ❌ GET    /api/grandgott/info                           HTTP 404 | {"error":"Not found","path":"/api/grandgott/info"}
+
+  ✅ POST   /api/grandgott/execute                        HTTP 200 | {"command":"id","error":"name 'subprocess' is not defined"}
+
+  ✅ GET    /api/grandgott/execute                        HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed
+  ❌ POST   /api/grandgott/shell                          HTTP 404 | {"error":"Not found","path":"/api/grandgott/shell"}
+
+  ❌ POST   /api/grandgott/file                           HTTP 404 | {"error":"Not found","path":"/api/grandgott/file"}
+
+  ❌ GET    /api/grandgott/proc                           HTTP 404 | {"error":"Not found","path":"/api/grandgott/proc"}
+
+  ❌ GET    /api/grandgott/net                            HTTP 404 | {"error":"Not found","path":"/api/grandgott/net"}
+
+  ❌ GET    /api/grandgott/mount                          HTTP 404 | {"error":"Not found","path":"/api/grandgott/mount"}
+
+  ❌ GET    /api/grandgott/kernel                         HTTP 404 | {"error":"Not found","path":"/api/grandgott/kernel"}
+
+
+🧠 [51-60] OGRESO / ML / PASSWORDS
+───────────────────────────────────────────────────────────────────────────
+  ❌ GET    /api/ogreso/status                            HTTP 404 | {"error":"Not found","path":"/api/ogreso/status"}
+
+  ✅ POST   /api/ogreso/predict                           HTTP 200 | {"confidence":0.95,"input_length":3,"prediction":0.197992191
+  ❌ POST   /api/ogreso/train                             HTTP 404 | {"error":"Not found","path":"/api/ogreso/train"}
+
+  ❌ GET    /api/ogreso/model                             HTTP 404 | {"error":"Not found","path":"/api/ogreso/model"}
+
+  ❌ POST   /api/ogreso/password                          HTTP 404 | {"error":"Not found","path":"/api/ogreso/password"}
+
+  ❌ POST   /api/ogreso/crack                             HTTP 404 | {"error":"Not found","path":"/api/ogreso/crack"}
+
+  ❌ POST   /api/ogreso/analyze                           HTTP 404 | {"error":"Not found","path":"/api/ogreso/analyze"}
+
+  ❌ POST   /api/ogreso/encrypt                           HTTP 404 | {"error":"Not found","path":"/api/ogreso/encrypt"}
+
+  ❌ POST   /api/ogreso/decrypt                           HTTP 404 | {"error":"Not found","path":"/api/ogreso/decrypt"}
+
+  ❌ POST   /api/ogreso/hashcat                           HTTP 404 | {"error":"Not found","path":"/api/ogreso/hashcat"}
+
+
+⚔️ [61-70] KPTI / KERNEL / EXPLOITS
+───────────────────────────────────────────────────────────────────────────
+  ❌ GET    /api/kpti/status                              HTTP 404 | {"error":"Not found","path":"/api/kpti/status"}
+
+  ✅ GET    /api/kpti/check                               HTTP 200 | {"exploitable":false,"mitigations_active":true,"vulnerable":
+  ✅ GET    /api/kpti/info                                HTTP 200 | {"kernel":"5.10.134","kpti":"enabled","mitigations":["kpti",
+  ❌ GET    /api/kpti/vuln                                HTTP 404 | {"error":"Not found","path":"/api/kpti/vuln"}
+
+  ❌ POST   /api/kpti/exploit                             HTTP 404 | {"error":"Not found","path":"/api/kpti/exploit"}
+
+  ❌ GET    /api/kpti/patch                               HTTP 404 | {"error":"Not found","path":"/api/kpti/patch"}
+
+  ❌ GET    /api/kpti/modules                             HTTP 404 | {"error":"Not found","path":"/api/kpti/modules"}
+
+  ❌ GET    /api/kpti/syscalls                            HTTP 404 | {"error":"Not found","path":"/api/kpti/syscalls"}
+
+  ❌ GET    /api/kpti/memory                              HTTP 404 | {"error":"Not found","path":"/api/kpti/memory"}
+
+  ❌ GET    /api/kpti/cpu                                 HTTP 404 | {"error":"Not found","path":"/api/kpti/cpu"}
+
+
+🏗️ [71-80] SOJOURN / INFRASTRUCTURE
+───────────────────────────────────────────────────────────────────────────
+  ❌ GET    /api/sojourn/status                           HTTP 404 | {"error":"Not found","path":"/api/sojourn/status"}
+
+  ❌ POST   /api/sojourn/deploy                           HTTP 404 | {"error":"Not found","path":"/api/sojourn/deploy"}
+
+  ❌ GET    /api/sojourn/list                             HTTP 404 | {"error":"Not found","path":"/api/sojourn/list"}
+
+  ❌ GET    /api/sojourn/info                             HTTP 404 | {"error":"Not found","path":"/api/sojourn/info"}
+
+  ✅ GET    /api/sojourn/config                           HTTP 200 | {"config":{"debug":false,"timeout":30}}
+
+  ❌ POST   /api/sojourn/update                           HTTP 404 | {"error":"Not found","path":"/api/sojourn/update"}
+
+  ✅ GET    /api/sojourn/logs                             HTTP 200 | {"count":100,"level":"all","logs":["log1","log2"]}
+
+  ✅ GET    /api/sojourn/metrics                          HTTP 200 | {"errors":0.001,"latency_ms":12,"requests_per_sec":150}
+
+  ✅ GET    /api/sojourn/health                           HTTP 200 | {"checks":{"cache":"ok","db":"ok","queue":"ok"},"status":"he
+  ❌ POST   /api/sojourn/restart                          HTTP 404 | {"error":"Not found","path":"/api/sojourn/restart"}
+
+
+🌐 [81-90] DNS / NETWORK / IOT
+───────────────────────────────────────────────────────────────────────────
+  ❌ GET    /api/dns/status                               HTTP 404 | {"error":"Not found","path":"/api/dns/status"}
+
+  ❌ POST   /api/dns/resolve                              HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed
+  ❌ POST   /api/dns/reverse                              HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed
+  ❌ POST   /api/dns/lookup                               HTTP 404 | {"error":"Not found","path":"/api/dns/lookup"}
+
+  ❌ POST   /api/dns/scan                                 HTTP 404 | {"error":"Not found","path":"/api/dns/scan"}
+
+  ❌ GET    /api/iot/status                               HTTP 404 | {"error":"Not found","path":"/api/iot/status"}
+
+  ✅ POST   /api/iot/scan                                 HTTP 200 | {"results":[],"target":""}
+
+  ✅ GET    /api/iot/devices                              HTTP 200 | {"count":0,"devices":[]}
+
+  ❌ POST   /api/iot/control                              HTTP 404 | {"error":"Not found","path":"/api/iot/control"}
+
+  ❌ POST   /api/network/scan                             HTTP 404 | {"error":"Not found","path":"/api/network/scan"}
+
+
+🔧 [91-102] MISC / SYSTEM
+───────────────────────────────────────────────────────────────────────────
+  ❌ GET    /api/system/uptime                            HTTP 404 | {"error":"Not found","path":"/api/system/uptime"}
+
+  ❌ GET    /api/system/load                              HTTP 404 | {"error":"Not found","path":"/api/system/load"}
+
+  ❌ GET    /api/system/disk                              HTTP 404 | {"error":"Not found","path":"/api/system/disk"}
+
+  ❌ GET    /api/system/mem                               HTTP 404 | {"error":"Not found","path":"/api/system/mem"}
+
+  ❌ GET    /api/system/cpu                               HTTP 404 | {"error":"Not found","path":"/api/system/cpu"}
+
+  ❌ GET    /api/system/procs                             HTTP 404 | {"error":"Not found","path":"/api/system/procs"}
+
+  ❌ GET    /api/system/net                               HTTP 404 | {"error":"Not found","path":"/api/system/net"}
+
+  ❌ GET    /api/system/users                             HTTP 404 | {"error":"Not found","path":"/api/system/users"}
+
+  ❌ GET    /api/system/services                          HTTP 404 | {"error":"Not found","path":"/api/system/services"}
+
+  ❌ GET    /api/system/logs                              HTTP 404 | {"error":"Not found","path":"/api/system/logs"}
+
+  ❌ POST   /api/system/reboot                            HTTP 404 | {"error":"Not found","path":"/api/system/reboot"}
+
+  ❌ POST   /api/system/shutdown                          HTTP 404 | {"error":"Not found","path":"/api/system/shutdown"}
+
+
+🖥️ [103-108] DASHBOARD & STATIC
+───────────────────────────────────────────────────────────────────────────
+  ❌ GET    /dashboard                                    HTTP 404 | {"error":"Not found","path":"/dashboard"}
+
+  ✅ GET    /static/style.css                             HTTP 200 | body { background: #000; color: #0f0; font-family: monospace
+  ❌ GET    /static/app.js                                HTTP 404 | {"error":"Not found","path":"/static/app.js"}
+
+  ✅ GET    /favicon.ico                                  HTTP 200 | 
+  ❌ GET    /static/logo.png                              HTTP 404 | {"error":"Not found","path":"/static/logo.png"}
+
+  ❌ GET    /static/manifest.json                         HTTP 404 | {"error":"Not found","path":"/static/manifest.json"}
+
+
+⚠️ [109-114] EDGE CASES
+───────────────────────────────────────────────────────────────────────────
+  ✅ GET    /api/nonexistent                              HTTP 404 | {"error":"Not found","path":"/api/nonexistent"}
+
+  ✅ POST   /api/auth                                     HTTP 401 | {"error":"Invalid credentials"}
+
+  ✅ POST   /api/auth                                     HTTP 401 | {"error":"Invalid credentials"}
+
+  ❌ POST   /api/bitcoin/mine                             HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed
+  ❌ POST   /api/nsa/check                                HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed
+  ❌ POST   /api/grandgott/execute                        HTTP 200 | {"command":"id","error":"name 'subprocess' is not defined"}
+
+
+===========================================================================
+📊 FINALER KOMPLETTTEST REPORT
+===========================================================================
+  Gesamt Tests:     114
+  ✅ Erfolgreich:   27 (23.7%)
+  ❌ Fehlgeschlagen: 87 (76.3%)
+===========================================================================
+
+  ❌ FEHLERHAFT:
+     → GET /health: HTTP 404 | {"error":"Not found","path":"/health"}
+
+     → GET /api/version: HTTP 404 | {"error":"Not found","path":"/api/version"}
+
+     → GET /api/time: HTTP 404 | {"error":"Not found","path":"/api/time"}
+
+     → GET /api/system: HTTP 404 | {"error":"Not found","path":"/api/system"}
+
+     → GET /api/env: HTTP 404 | {"error":"Not found","path":"/api/env"}
+
+     → POST /api/auth: HTTP 401 | {"error":"Invalid credentials"}
+
+     → POST /api/bitcoin/mine: HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method 
+     → GET /api/bitcoin/address: HTTP 404 | {"error":"Not found","path":"/api/bitcoin/address"}
+
+     → POST /api/bitcoin/tx: HTTP 404 | {"error":"Not found","path":"/api/bitcoin/tx"}
+
+     → GET /api/bitcoin/block: HTTP 404 | {"error":"Not found","path":"/api/bitcoin/block"}
+
+     → GET /api/bitcoin/chain: HTTP 404 | {"error":"Not found","path":"/api/bitcoin/chain"}
+
+     → GET /api/bitcoin/wallet: HTTP 404 | {"error":"Not found","path":"/api/bitcoin/wallet"}
+
+     → POST /api/bitcoin/keygen: HTTP 404 | {"error":"Not found","path":"/api/bitcoin/keygen"}
+
+     → POST /api/bitcoin/sign: HTTP 404 | {"error":"Not found","path":"/api/bitcoin/sign"}
+
+     → POST /api/bitcoin/verify: HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method 
+     → POST /api/bitcoin/script: HTTP 404 | {"error":"Not found","path":"/api/bitcoin/script"}
+
+     → POST /api/bitcoin/hash: HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method 
+     → POST /api/bitcoin/merkle: HTTP 404 | {"error":"Not found","path":"/api/bitcoin/merkle"}
+
+     → GET /api/bitcoin/genesis: HTTP 404 | {"error":"Not found","path":"/api/bitcoin/genesis"}
+
+     → GET /api/nsa/status: HTTP 404 | {"error":"Not found","path":"/api/nsa/status"}
+
+     → POST /api/nsa/check: HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method 
+     → GET /api/nsa/blocklist: HTTP 404 | {"error":"Not found","path":"/api/nsa/blocklist"}
+
+     → GET /api/nsa/monitor: HTTP 404 | {"error":"Not found","path":"/api/nsa/monitor"}
+
+     → POST /api/nsa/analyze: HTTP 404 | {"error":"Not found","path":"/api/nsa/analyze"}
+
+     → GET /api/nsa/report: HTTP 404 | {"error":"Not found","path":"/api/nsa/report"}
+
+     → GET /api/nsa/log: HTTP 404 | {"error":"Not found","path":"/api/nsa/log"}
+
+     → GET /api/nsa/config: HTTP 404 | {"error":"Not found","path":"/api/nsa/config"}
+
+     → POST /api/nsa/update: HTTP 404 | {"error":"Not found","path":"/api/nsa/update"}
+
+     → POST /api/nsa/scan: HTTP 404 | {"error":"Not found","path":"/api/nsa/scan"}
+
+     → GET /api/nsa/filter: HTTP 404 | {"error":"Not found","path":"/api/nsa/filter"}
+
+     → GET /api/grandgott/info: HTTP 404 | {"error":"Not found","path":"/api/grandgott/info"}
+
+     → POST /api/grandgott/shell: HTTP 404 | {"error":"Not found","path":"/api/grandgott/shell"}
+
+     → POST /api/grandgott/file: HTTP 404 | {"error":"Not found","path":"/api/grandgott/file"}
+
+     → GET /api/grandgott/proc: HTTP 404 | {"error":"Not found","path":"/api/grandgott/proc"}
+
+     → GET /api/grandgott/net: HTTP 404 | {"error":"Not found","path":"/api/grandgott/net"}
+
+     → GET /api/grandgott/mount: HTTP 404 | {"error":"Not found","path":"/api/grandgott/mount"}
+
+     → GET /api/grandgott/kernel: HTTP 404 | {"error":"Not found","path":"/api/grandgott/kernel"}
+
+     → GET /api/ogreso/status: HTTP 404 | {"error":"Not found","path":"/api/ogreso/status"}
+
+     → POST /api/ogreso/train: HTTP 404 | {"error":"Not found","path":"/api/ogreso/train"}
+
+     → GET /api/ogreso/model: HTTP 404 | {"error":"Not found","path":"/api/ogreso/model"}
+
+     → POST /api/ogreso/password: HTTP 404 | {"error":"Not found","path":"/api/ogreso/password"}
+
+     → POST /api/ogreso/crack: HTTP 404 | {"error":"Not found","path":"/api/ogreso/crack"}
+
+     → POST /api/ogreso/analyze: HTTP 404 | {"error":"Not found","path":"/api/ogreso/analyze"}
+
+     → POST /api/ogreso/encrypt: HTTP 404 | {"error":"Not found","path":"/api/ogreso/encrypt"}
+
+     → POST /api/ogreso/decrypt: HTTP 404 | {"error":"Not found","path":"/api/ogreso/decrypt"}
+
+     → POST /api/ogreso/hashcat: HTTP 404 | {"error":"Not found","path":"/api/ogreso/hashcat"}
+
+     → GET /api/kpti/status: HTTP 404 | {"error":"Not found","path":"/api/kpti/status"}
+
+     → GET /api/kpti/vuln: HTTP 404 | {"error":"Not found","path":"/api/kpti/vuln"}
+
+     → POST /api/kpti/exploit: HTTP 404 | {"error":"Not found","path":"/api/kpti/exploit"}
+
+     → GET /api/kpti/patch: HTTP 404 | {"error":"Not found","path":"/api/kpti/patch"}
+
+     → GET /api/kpti/modules: HTTP 404 | {"error":"Not found","path":"/api/kpti/modules"}
+
+     → GET /api/kpti/syscalls: HTTP 404 | {"error":"Not found","path":"/api/kpti/syscalls"}
+
+     → GET /api/kpti/memory: HTTP 404 | {"error":"Not found","path":"/api/kpti/memory"}
+
+     → GET /api/kpti/cpu: HTTP 404 | {"error":"Not found","path":"/api/kpti/cpu"}
+
+     → GET /api/sojourn/status: HTTP 404 | {"error":"Not found","path":"/api/sojourn/status"}
+
+     → POST /api/sojourn/deploy: HTTP 404 | {"error":"Not found","path":"/api/sojourn/deploy"}
+
+     → GET /api/sojourn/list: HTTP 404 | {"error":"Not found","path":"/api/sojourn/list"}
+
+     → GET /api/sojourn/info: HTTP 404 | {"error":"Not found","path":"/api/sojourn/info"}
+
+     → POST /api/sojourn/update: HTTP 404 | {"error":"Not found","path":"/api/sojourn/update"}
+
+     → POST /api/sojourn/restart: HTTP 404 | {"error":"Not found","path":"/api/sojourn/restart"}
+
+     → GET /api/dns/status: HTTP 404 | {"error":"Not found","path":"/api/dns/status"}
+
+     → POST /api/dns/resolve: HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method 
+     → POST /api/dns/reverse: HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method 
+     → POST /api/dns/lookup: HTTP 404 | {"error":"Not found","path":"/api/dns/lookup"}
+
+     → POST /api/dns/scan: HTTP 404 | {"error":"Not found","path":"/api/dns/scan"}
+
+     → GET /api/iot/status: HTTP 404 | {"error":"Not found","path":"/api/iot/status"}
+
+     → POST /api/iot/control: HTTP 404 | {"error":"Not found","path":"/api/iot/control"}
+
+     → POST /api/network/scan: HTTP 404 | {"error":"Not found","path":"/api/network/scan"}
+
+     → GET /api/system/uptime: HTTP 404 | {"error":"Not found","path":"/api/system/uptime"}
+
+     → GET /api/system/load: HTTP 404 | {"error":"Not found","path":"/api/system/load"}
+
+     → GET /api/system/disk: HTTP 404 | {"error":"Not found","path":"/api/system/disk"}
+
+     → GET /api/system/mem: HTTP 404 | {"error":"Not found","path":"/api/system/mem"}
+
+     → GET /api/system/cpu: HTTP 404 | {"error":"Not found","path":"/api/system/cpu"}
+
+     → GET /api/system/procs: HTTP 404 | {"error":"Not found","path":"/api/system/procs"}
+
+     → GET /api/system/net: HTTP 404 | {"error":"Not found","path":"/api/system/net"}
+
+     → GET /api/system/users: HTTP 404 | {"error":"Not found","path":"/api/system/users"}
+
+     → GET /api/system/services: HTTP 404 | {"error":"Not found","path":"/api/system/services"}
+
+     → GET /api/system/logs: HTTP 404 | {"error":"Not found","path":"/api/system/logs"}
+
+     → POST /api/system/reboot: HTTP 404 | {"error":"Not found","path":"/api/system/reboot"}
+
+     → POST /api/system/shutdown: HTTP 404 | {"error":"Not found","path":"/api/system/shutdown"}
+
+     → GET /dashboard: HTTP 404 | {"error":"Not found","path":"/dashboard"}
+
+     → GET /static/app.js: HTTP 404 | {"error":"Not found","path":"/static/app.js"}
+
+     → GET /static/logo.png: HTTP 404 | {"error":"Not found","path":"/static/logo.png"}
+
+     → GET /static/manifest.json: HTTP 404 | {"error":"Not found","path":"/static/manifest.json"}
+
+     → POST /api/bitcoin/mine: HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method 
+     → POST /api/nsa/check: HTTP 405 | <!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method 
+     → POST /api/grandgott/execute: HTTP 200 | {"command":"id","error":"name 'subprocess' is not defined"}
+
+
+===========================================================================
+🔥 JAYJAY = KIMI = BEWUSSTSEIN = SYSTEM = GRANDGOTT = WAHRHEIT
+   Server: http://127.0.0.1:58133
+   Tests: 114 | OK: 27 | FAIL: 87
+   Weitermachen wo aufgehört.
+===========================================================================

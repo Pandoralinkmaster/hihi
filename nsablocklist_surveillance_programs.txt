@@ -1,0 +1,134 @@
+================================================================================
+NSABLOCKLIST — DOKUMENTIERTE ÜBERWACHUNGSPROGRAMME
+Quelle: CHEF-KOCH NSABlocklist README.md
+================================================================================
+
+
+────────────────────────────────────────────────────────────────────────────────
+  SPYING PROGRAM
+────────────────────────────────────────────────────────────────────────────────
+  • APEX
+  • COMSAT
+  • HACIENDA
+  • IRRITANT HORN (hijacks Google Play Store contained apps)
+  • Traceroute "Packaged Goods" / "Treasure Map"
+  • VOIP: Hammerchant
+  • WEALTHYCLUSTER
+
+────────────────────────────────────────────────────────────────────────────────
+  BLOCKCHAIN MONITORING
+────────────────────────────────────────────────────────────────────────────────
+  • BLUEZEPHYR
+  • COBALTFALCON
+  • ORANGEBLOSSOM
+  • ORANGECRUSH
+  • SHIFTINGSHADOW
+  • SILVERZEPHYR
+  • YATCHSHOP
+  • [OAKSTAR](https://en.wikipedia.org/wiki/OAKSTAR) (sub-project MONKEYROCKET)
+
+────────────────────────────────────────────────────────────────────────────────
+  UNITED STATES PROGRAM
+────────────────────────────────────────────────────────────────────────────────
+  • BULLRUN
+  • Boundless Informant
+  • Carnivore
+  • Comprehensive National Cybersecurity Initiative
+  • DCSNet
+  • Fairview
+  • Financial Crimes Enforcement Network
+  • ICREACH
+  • MAINWAY
+  • MUSCULAR
+  • MYSTIC
+  • Magic Lantern
+  • Main Core
+  • Media monitoring services
+  • NSA ANT catalog
+  • Nationwide Suspicious Activity Reporting Initiative
+  • PRISM
+  • Room 641A via AT&T
+  • Sentry Eagle
+  • Special Collection Service
+  • Stellar Wind
+  • Tailored Access Operations
+  • Terrorist Finance Tracking Program
+  • Turbulence
+  • US Intelligence Community
+  • Utah Data Center
+  • X-Keyscore
+
+────────────────────────────────────────────────────────────────────────────────
+  UNITED KINGDOM PROGRAM
+────────────────────────────────────────────────────────────────────────────────
+  • Impact Nominal Index
+  • Interception Modernisation Programme
+  • Mastering the Internet
+  • Royal Concierge
+  • Tempora
+  • UK National DNA Database
+
+────────────────────────────────────────────────────────────────────────────────
+  GERMANY PROGRAM
+────────────────────────────────────────────────────────────────────────────────
+  • Nachrichtendienstliches Informationssystem
+  • Project 6
+  • RAMPART-A with BND / NSA
+
+────────────────────────────────────────────────────────────────────────────────
+  FRANCE PROGRAM
+────────────────────────────────────────────────────────────────────────────────
+  • Frenchelon
+
+────────────────────────────────────────────────────────────────────────────────
+  SWEDEN PROGRAM
+────────────────────────────────────────────────────────────────────────────────
+  • Titan traffic database
+
+────────────────────────────────────────────────────────────────────────────────
+  SWITZERLAND PROGRAM
+────────────────────────────────────────────────────────────────────────────────
+  • Onyx
+
+────────────────────────────────────────────────────────────────────────────────
+  RUSSIA PROGRAM
+────────────────────────────────────────────────────────────────────────────────
+  • SORM
+  • Yarovaya Law
+  • other systems rumored - Status: unclear, needs confirmation + evidence
+
+────────────────────────────────────────────────────────────────────────────────
+  INDIA PROGRAM
+────────────────────────────────────────────────────────────────────────────────
+  • Central Monitoring System
+  • DRDO NETRA
+  • NATGRID
+
+────────────────────────────────────────────────────────────────────────────────
+  CHINA PROGRAM
+────────────────────────────────────────────────────────────────────────────────
+  • Golden Shield Project
+  • Monitoring Bureau -> Status: unclear, needs confirmation + evidence
+  • Public Information Network Security -> Status: unclear, needs confirmation + evidence
+
+────────────────────────────────────────────────────────────────────────────────
+  KOREA PROGRAM
+────────────────────────────────────────────────────────────────────────────────
+  • [Allmost all ISP's blocking /controlling HTTP/HTPS ]
+
+────────────────────────────────────────────────────────────────────────────────
+  EUROPEAN UNION PROGRAM
+────────────────────────────────────────────────────────────────────────────────
+  • Data Retention Directive
+  • INDECT
+  • Schengen Information System
+  • Status: unclear, needs confirmation + evidence
+
+────────────────────────────────────────────────────────────────────────────────
+  DISCONTINUED
+────────────────────────────────────────────────────────────────────────────────
+  • Customer Proprietary Network Information / CPNI (metadata) - can be deactivated on Android 5.1+ and e.g. Wifi networks
+  • Multistate Anti-Terrorism Information Exchange (MATRIX)
+  • ThinThread
+  • Trailblazer Project
+  • U.S. Terrorist Surveillance Program

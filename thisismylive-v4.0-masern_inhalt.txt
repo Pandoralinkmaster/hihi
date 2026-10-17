@@ -1,0 +1,39 @@
+Archive:  /home/ubuntu/upload/thisismylive-v4.0-masern.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+      264  2026-07-06 10:38   .gitignore
+     7742  2026-07-06 10:38   DOCUMENTATION.md
+      816  2026-07-06 10:41   Dockerfile
+      363  2026-07-06 10:38   LICENSE
+     1323  2026-07-06 10:41   Makefile
+     4917  2026-07-06 10:38   README.md
+     1542  2026-07-06 10:33   bootstrap.sh
+    19593  2026-07-06 12:08   brain-server.py
+     1090  2026-07-06 10:41   config.json
+      714  2026-07-06 10:33   crontab.txt
+      609  2026-07-06 10:41   docker-compose.yml
+     1016  2026-07-06 11:19   global-access.sh
+    21052  2026-07-06 11:09   index.html
+     1600  2026-07-06 10:33   install-service.sh
+    29499  2026-07-06 12:21   masern-server.py
+     1886  2026-07-06 12:26   masern.log
+     7442  2026-07-06 10:23   master.sh
+      557  2026-07-06 10:38   package.json
+      116  2026-07-06 10:38   requirements.txt
+    14369  2026-07-06 11:03   server-auth.py
+     3042  2026-07-06 10:18   server.js
+     1904  2026-07-06 10:41   setup.sh
+     2547  2026-07-06 11:19   start-nocontainer.sh
+      763  2026-07-06 10:23   start-protected.sh
+      644  2026-07-06 10:23   start-universal.sh
+      325  2026-07-06 10:23   start.sh
+     1386  2026-07-06 10:26   status.sh
+      629  2026-07-06 10:33   thisismylive-permanent.service
+     2687  2026-07-06 11:19   tunnel-permanent.sh
+     5104  2026-07-06 11:30   tunnel-python.py
+     2308  2026-07-06 10:26   watchdog.sh
+    20547  2026-07-06 11:11   __pycache__/server-auth.cpython-312.pyc
+      132  2026-07-06 12:26   data/infected.json
+      207  2026-07-06 12:26   data/state.json
+---------                     -------
+   158735                     34 files
